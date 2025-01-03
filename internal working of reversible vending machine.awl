@@ -1,0 +1,84 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=Program Comments
+BEGIN
+Network 1 
+// Network Comment
+LD     I0.0
+O      Q0.0
+AN     I0.1
+AN     I0.6
+=      Q0.0
+Network 2 
+LD     Q0.0
+TON    T37, 50
+Network 3 
+LD     T37
+=      Q0.1
+Network 4 
+LD     Q0.0
+TON    T38, 1000
+Network 5 
+LD     Q0.0
+AW>=   T38, 0
+AW<=   T38, 1000
+=      Q0.2
+Network 6 
+LD     Q0.2
+AN     I0.2
+AW>=   T38, 201
+AW<=   T38, 400
+LD     I0.1
+CTU    C0, 1
+Network 7 
+LD     Q0.2
+AN     I0.3
+AW>=   T38, 401
+AW<=   T38, 600
+LD     I0.1
+CTU    C1, 1
+Network 8 
+LD     Q0.2
+AN     I0.4
+AW>=   T38, 601
+AW<=   T38, 800
+LD     I0.1
+CTU    C2, 1
+Network 9 
+LD     Q0.2
+AN     I0.5
+AW>=   T38, 801
+AW<=   T38, 1000
+LD     I0.1
+CTU    C3, 1
+Network 10 
+LD     C0
+AN     I0.2
+=      Q0.3
+Network 11 
+LD     C1
+AN     I0.3
+=      Q0.4
+Network 12 
+LD     C2
+AN     I0.4
+=      Q0.5
+Network 13 
+LD     C3
+AN     I0.5
+=      Q0.6
+Network 14 
+LD     Q0.5
+=      Q0.7
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK SBR_0:SBR0
+TITLE=Subroutine Comments
+BEGIN
+Network 1 
+// Network Comment
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=Interrupt routine comments
+BEGIN
+Network 1 
+// Network Comment
+END_INTERRUPT_BLOCK
